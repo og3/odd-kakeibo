@@ -1,0 +1,21 @@
+.pre-header
+  = link_to "ログアウト", destroy_user_session_path, method: :delete
+.user_show
+  .user_show__account_container
+    %h1.user_show__account_container__accont_header
+      アカウント情報
+    .user_show__account_container__main
+      %p 
+        = current_user.name
+      %p 
+        = current_user.email
+      = link_to "EDIT", edit_user_registration_path, class: "edit_link btn_gray btn"
+      .user_show__account_container__main
+      %p 
+        実績
+      %p 
+        会計
+    .user_show__account_container__user_image
+      .user_show__account_container__user_image__image
+        = image_tag current_user.image, size: "300x300"
+        
