@@ -1,0 +1,2 @@
+class TreasurersController < ApplicationController
+end
