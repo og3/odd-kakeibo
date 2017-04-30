@@ -1,0 +1,95 @@
+.user_show {
+  margin: 20px 30px 0;
+  &__account_container {
+    width: 95%;
+    max-width: 1024px;
+    font-size: 1em;
+    display: block;
+    width: 90%;
+    font-size: 1em;
+    min-width: 300px;
+    min-height: 400px;
+    position: relative;
+    color: #333;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0 auto;
+    &__accont_header {
+    font-size: 2.15em;
+    margin: 0 0 .55em;
+    color: #333;
+    font-weight: 400;
+    border-bottom: 1px solid #333;
+    }
+    &__main {
+      border-bottom: 1px solid #333;
+      float: right;
+      width: 700px;
+    }
+    &__user_image {
+      float: left;
+      &__image {}
+    }
+  }
+}
+
+.btn_gray {
+  color: #000;
+  background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#e6e6e6),to(#ddd));
+  background-image: -webkit-linear-gradient(top,#e6e6e6,#ddd);
+  background-image: -moz-linear-gradient(top,#e6e6e6,#ddd);
+  background-image: -o-linear-gradient(top,#e6e6e6,#ddd);
+  background-image: linear-gradient(to bottom,#e6e6e6,#ddd);
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.2);
+  -moz-box-shadow: 0 1px 0 rgba(0,0,0,.2);
+  box-shadow: 0 1px 0 rgba(0,0,0,.2);
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1em;
+    vertical-align: middle;
+    cursor: pointer;
+    font-family: Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: .1px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0;
+    position: relative;
+    color: #000;
+    background-color: #e6e6e6;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#e6e6e6),to(#ddd));
+    background-image: -webkit-linear-gradient(top,#e6e6e6,#ddd);
+    background-image: -moz-linear-gradient(top,#e6e6e6,#ddd);
+    background-image: -o-linear-gradient(top,#e6e6e6,#ddd);
+    background-image: linear-gradient(to bottom,#e6e6e6,#ddd);
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 0 rgba(0,0,0,.2);
+    box-shadow: 0 1px 0 rgba(0,0,0,.2);
+}
+
+.menu_link {
+    position: relative;
+    width: 700px;
+    display: block;
+    margin: 20px 10px 10px 0;
+    bottom: 10px;
+    left: 0;
+    text-transform: none;
+    font-size: 20px;
+    padding: 12px 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1em;
+}
