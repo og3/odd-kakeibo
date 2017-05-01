@@ -1,0 +1,34 @@
+
+.treasurer_main
+  .treasurer_main__main_container
+    .treasurer_input
+      = form_for @treasurer, url: user_treasurers_path do |f|
+        .treasurer_input__top_submit
+          = f.submit "会計の登録"
+        .treasurer_input__inputs
+          = f.text_field :date, placeholder: "日付"
+          = f.text_field :comment, placeholder: "品目"
+          = f.text_field :category, placeholder: "カテゴリ"
+          = f.text_field :price, placeholder: "値段"
+        .treasurer_input__end_submit
+          = f.submit "登録"
+    .treasurer_list
+      %ul.treasurer_list__header
+        %li.treasurer_list__header__list
+          日付
+        %li.treasurer_list__header__list
+          品目
+        %li.treasurer_list__header__list
+          カテゴリ
+        %li.treasurer_list__header__price
+          値段
+      %ul.treasurer_list__main
+        - @treasurers.each do |treasurer|
+          %li.treasurer_list__main__list
+            = treasurer.date
+          %li.treasurer_list__main__list
+            = treasurer.comment
+          %li.treasurer_list__main__list
+            = treasurer.category
+          %li.treasurer_list__main__price
+            = treasurer.price

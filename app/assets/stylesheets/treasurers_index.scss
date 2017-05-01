@@ -1,0 +1,49 @@
+// ページのメインコンテンツを囲う部分
+.treasurer_main {
+  margin: 20px 30px 0;
+  &__main_container {
+    width: 95%;
+    max-width: 1024px;
+    font-size: 1em;
+    display: block;
+    width: 90%;
+    font-size: 1em;
+    min-width: 300px;
+    min-height: 400px;
+    position: relative;
+    color: #333;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0 auto;
+  }
+}
+
+.treasurer_input {
+  background-color: white;
+}
+
+.treasurer_list {
+  background-color: white;
+  &__header {
+    &__list {
+      padding-right: 230px;
+      clear: left;
+      display: inline;
+    }
+    &__price {
+      clear: left;
+      display: inline;
+    }
+  }
+  &__main {
+    &__list {
+      padding-right: 170px;
+      clear: left;
+      display: inline;
+    }
+    &__price {
+      padding-left: 70px;
+      clear: left;
+      display: inline;
+    }
+  }
+}
