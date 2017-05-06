@@ -13,7 +13,7 @@
       .user_show__account_container__main
       %p 
         実績
-      = link_to "家計簿をつける", edit_user_registration_path, class: "menu_link btn_gray btn"
+      = link_to "家計簿をつける", user_treasurers_path(current_user.id), class: "menu_link btn_gray btn"
     .user_show__account_container__user_image
       .user_show__account_container__user_image__image
         = image_tag current_user.image, size: "300x300"
