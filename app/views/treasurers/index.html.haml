@@ -2,7 +2,7 @@
 .treasurer_main
   .treasurer_main__main_container
     .treasurer_input
-      = form_for @treasurer, url: user_treasurers_path do |f|
+      = form_for @treasurer, url: user_treasurers_path, data: { remote: true } do |f|
         .treasurer_input__top_submit
           = f.submit "会計の登録"
         .treasurer_input__inputs
@@ -22,13 +22,13 @@
           カテゴリ
         %li.treasurer_list__header__price
           値段
-      %ul.treasurer_list__main
-        - @treasurers.each do |treasurer|
-          %li.treasurer_list__main__list
+      - @treasurers.each do |treasurer|
+        %ul.treasurer_list__main
+          %li.treasurer_list__main__date
             = treasurer.date
-          %li.treasurer_list__main__list
+          %li.treasurer_list__main__comment
             = treasurer.comment
-          %li.treasurer_list__main__list
+          %li.treasurer_list__main__category
             = treasurer.category
           %li.treasurer_list__main__price
             = treasurer.price
