@@ -13,8 +13,8 @@
 ActiveRecord::Schema.define(version: 20170430071502) do
 
   create_table "treasurers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "date",       null: false
-    t.string   "price",      null: false
+    t.date     "date",       null: false
+    t.integer  "price",      null: false
     t.string   "comment",    null: false
     t.string   "category",   null: false
     t.integer  "user_id",    null: false
