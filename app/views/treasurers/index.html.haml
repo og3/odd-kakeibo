@@ -3,15 +3,13 @@
   .treasurer_main__main_container
     .treasurer_input
       = form_for @treasurer, url: user_treasurers_path, data: { remote: true } do |f|
-        .treasurer_input__top_submit
-          = f.submit "会計の登録"
         .treasurer_input__inputs
-          = f.text_field :date, placeholder: "日付"
-          = f.text_field :comment, placeholder: "品目"
-          = f.text_field :category, placeholder: "カテゴリ"
-          = f.text_field :price, placeholder: "値段"
-        .treasurer_input__end_submit
-          = f.submit "登録"
+          = f.text_field :date, placeholder: "日付", class: "treasurer_input__inputs__date"
+          = f.text_field :comment, placeholder: "品目", class: "treasurer_input__inputs__comment"
+          = f.text_field :category, placeholder: "カテゴリ", class: "treasurer_input__inputs__category"
+          = f.text_field :price, placeholder: "値段", class: "treasurer_input__inputs__price"
+          .treasurer_input__inputs__submit
+            = f.submit "登録"
     .treasurer_list
       %ul.treasurer_list__header
         %li.treasurer_list__header__list
