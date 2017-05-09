@@ -17,6 +17,14 @@ class TreasurersController < ApplicationController
 # 会計を保存する
   def create
     treasurer = Treasurer.new(treasurer_params)
+    if treasurer.category == "" && treasurer.comment == ""
+      treasurer.category << "入力されていません"
+      treasurer.comment << "入力されていません"
+    elsif treasurer.category == ""
+      treasurer.category << "入力されていません"
+    elsif treasurer.comment == ""
+      treasurer.comment << "入力されていません"
+    end
     if treasurer.save
       respond_to do |format|
         format.html { redirect_to user_treasurers_path}
