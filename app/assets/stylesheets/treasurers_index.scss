@@ -1,0 +1,122 @@
+// ページのメインコンテンツを囲う部分
+.treasurer_main {
+  margin: 20px 30px 0;
+  &__main_container {
+    width: 95%;
+    max-width: 1024px;
+    font-size: 1em;
+    display: block;
+    width: 90%;
+    font-size: 1em;
+    min-width: 300px;
+    min-height: 400px;
+    position: relative;
+    color: #333;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0 auto;
+  }
+}
+
+// 入力欄部分
+.treasurer_input {
+  background-color: white;
+  border-radius: .25rem;
+  &__inputs {
+    padding: 20px;
+    &__date {
+      border-radius: .25rem;
+      height: 30px;
+      font-size: 15px;
+      padding: 3px;
+      font-weight: 900;
+    }
+    &__comment {
+      border-radius: .25rem;
+      height: 30px;
+      font-size: 15px;
+      padding: 3px;
+      margin-left: 20px;
+      width: 300px;
+      font-weight: 900;
+    }
+    &__category {
+      border-radius: .25rem;
+      height: 30px;
+      font-size: 15px;
+      padding: 3px;
+      margin-left: 20px;
+      width: 200px;
+      font-weight: 900;
+    }
+    &__price {
+      border-radius: .25rem;
+      height: 30px;
+      font-size: 15px;
+      padding: 3px;
+      margin-left: 15px;
+      font-weight: 900;
+    }
+    &__submit input {
+      font-size: 1.25rem;
+      padding: 15px 32px 18px;
+      background: #2ab27b;
+      color: #fff;
+      line-height: 1.2rem;
+      font-weight: 900;
+      user-select: none;
+      text-decoration: none;
+      cursor: pointer;
+      text-shadow: 0 1px 1px rgba(0,0,0,.1);
+      border: none;
+      border-radius: .25rem;
+      box-shadow: none;
+      position: relative;
+      display: inline-block;
+      vertical-align: bottom;
+      text-align: center;
+      white-space: nowrap;
+      margin-top: 20px;
+      width: 980px;
+    }
+  }
+}
+
+.treasurer_list {
+  margin-top: 50px;
+  float: left;
+  background-color: white;
+  width: 1025px;
+  border-radius: .25rem;
+  &__header {
+    &__list {
+      padding-right: 230px;
+      clear: left;
+      display: inline;
+    }
+    &__price {
+      clear: left;
+      display: inline;
+    }
+  }
+}
+
+.treasurer_list__main {
+  float: left;
+  &__date {
+    float: left;
+    width: 270px;
+  }
+  &__comment {
+    float: left;
+    width: 270px;
+  }
+  &__category {
+    float: left;
+    width: 300px;
+  }
+  &__price {
+    float: left;
+    width: 130px;
+  }
+}
+
