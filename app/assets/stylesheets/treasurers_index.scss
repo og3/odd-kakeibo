@@ -20,6 +20,7 @@
 // 入力欄部分
 .treasurer_input {
   background-color: white;
+  border-radius: .25rem;
   &__inputs {
     padding: 20px;
     &__date {
@@ -84,6 +85,8 @@
   margin-top: 50px;
   float: left;
   background-color: white;
+  width: 1025px;
+  border-radius: .25rem;
   &__header {
     &__list {
       padding-right: 230px;
