@@ -81,6 +81,7 @@
   }
 }
 
+// 表示部分のヘッダー
 .treasurer_list {
   margin-top: 50px;
   float: left;
@@ -88,14 +89,23 @@
   width: 1025px;
   border-radius: .25rem;
   &__header {
-    &__list {
-      padding-right: 230px;
-      clear: left;
-      display: inline;
+    float: left;
+    font-weight: 900;
+    &__date {
+      float: left;
+      margin-right: 160px;
+    }
+    &__comment {
+      float: left;
+      margin-right: 300px;
+    }
+    &__category {
+      float: left;
+      margin-right: 240px;
     }
     &__price {
-      clear: left;
-      display: inline;
+      float: left;
+      margin-right: 120px;
     }
   }
 }
@@ -104,19 +114,22 @@
   float: left;
   &__date {
     float: left;
-    width: 270px;
+    width: 150px;
+    margin-right: 40px;
   }
   &__comment {
     float: left;
-    width: 270px;
+    width: 300px;
+    margin-right: 30px;
   }
   &__category {
     float: left;
-    width: 300px;
+    width: 270px;
+    margin-right: 35px;
   }
   &__price {
     float: left;
-    width: 130px;
+    width: 150px;
   }
 }
 

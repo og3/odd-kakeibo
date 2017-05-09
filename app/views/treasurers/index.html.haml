@@ -4,19 +4,19 @@
     .treasurer_input
       = form_for @treasurer, url: user_treasurers_path, data: { remote: true } do |f|
         .treasurer_input__inputs
-          = f.text_field :date, placeholder: "日付", class: "treasurer_input__inputs__date"
-          = f.text_field :comment, placeholder: "品目", class: "treasurer_input__inputs__comment"
-          = f.text_field :category, placeholder: "カテゴリ", class: "treasurer_input__inputs__category"
-          = f.text_field :price, placeholder: "値段", class: "treasurer_input__inputs__price"
+          = f.text_field :date, placeholder: "日付(例:20170404)", class: "treasurer_input__inputs__date"
+          = f.text_field :comment, placeholder: "品目(15文字まで)", class: "treasurer_input__inputs__comment"
+          = f.text_field :category, placeholder: "カテゴリ(15文字まで)", class: "treasurer_input__inputs__category"
+          = f.text_field :price, placeholder: "値段(半角)", class: "treasurer_input__inputs__price"
           .treasurer_input__inputs__submit
             = f.submit "登録"
     .treasurer_list
       %ul.treasurer_list__header
-        %li.treasurer_list__header__list
+        %li.treasurer_list__header__date
           日付
-        %li.treasurer_list__header__list
+        %li.treasurer_list__header__comment
           品目
-        %li.treasurer_list__header__list
+        %li.treasurer_list__header__category
           カテゴリ
         %li.treasurer_list__header__price
           値段
