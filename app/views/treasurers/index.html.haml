@@ -4,7 +4,7 @@
     .treasurer_input
       = form_for @treasurer, url: user_treasurers_path, data: { remote: true } do |f|
         .treasurer_input__inputs
-          = f.text_field :date, placeholder: "日付(例:20170404)", class: "treasurer_input__inputs__date"
+          = f.text_field :date, value: @date, class: "treasurer_input__inputs__date"
           = f.text_field :comment, placeholder: "品目(15文字まで)", class: "treasurer_input__inputs__comment"
           = f.text_field :category, placeholder: "カテゴリ(15文字まで)", class: "treasurer_input__inputs__category"
           = f.text_field :price, placeholder: "値段(半角)", class: "treasurer_input__inputs__price"
