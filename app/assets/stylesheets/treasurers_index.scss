@@ -28,6 +28,7 @@
       height: 30px;
       font-size: 15px;
       padding: 3px;
+      width: 180px;
       font-weight: 900;
     }
     &__comment {
@@ -45,7 +46,7 @@
       font-size: 15px;
       padding: 3px;
       margin-left: 20px;
-      width: 200px;
+      width: 180px;
       font-weight: 900;
     }
     &__price {
@@ -53,7 +54,8 @@
       height: 30px;
       font-size: 15px;
       padding: 3px;
-      margin-left: 15px;
+      margin-left: 20px;
+      width: 180px;
       font-weight: 900;
     }
     &__submit input {

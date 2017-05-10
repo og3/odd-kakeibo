@@ -3,8 +3,8 @@ class CreateTreasurers < ActiveRecord::Migration[5.0]
     create_table :treasurers do |t|
       t.date :date, null: false
       t.integer :price, null: false
-      t.string :comment, limit: 15
-      t.string :category, limit: 15
+      t.string :comment, limit: 15, null: false
+      t.string :category, limit: 15, null: false
       t.references :user, null: false
       t.timestamps
     end
