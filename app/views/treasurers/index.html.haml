@@ -13,13 +13,13 @@
     .treasurer_list
       %ul.treasurer_list__header
         %li.treasurer_list__header__date
-          日付
+          = sortable "date", "日付"
         %li.treasurer_list__header__comment
-          品目
+          = sortable "comment", "品目"
         %li.treasurer_list__header__category
-          カテゴリ
+          = sortable "category", "カテゴリ"
         %li.treasurer_list__header__price
-          値段
+          = sortable "price", "値段"
       - @treasurers.each do |treasurer|
         %ul.treasurer_list__main
           %li.treasurer_list__main__date
