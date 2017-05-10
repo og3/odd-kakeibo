@@ -4,6 +4,7 @@ class TreasurersController < ApplicationController
   before_action :authenticate_user!
 # 会計の一覧を表示
   def index
+    @date = Date.today
     @treasurer = Treasurer.new
     # sort_direction、sort_columnの値に基いて並び替えたデータを取得するため
     @treasurers = current_user.treasurers.order(sort_column + ' ' + sort_direction)
