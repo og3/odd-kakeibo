@@ -57,10 +57,10 @@ class TreasurersController < ApplicationController
   end
 # sort_directionではViewから受け取るparams[:direction]がasc、もしくはdescのどちらかに含まれるかを三項演算子を使用して判定しています。params[:direction]が指定されていない場合はascとなります。すなわちデフォルトの状態ではascで並び替えられたテーブルが表示されます。
   def sort_direction
-    %w[asc desc].include?(params[:direction]) ?  params[:direction] : "asc"
+    %w(asc desc).include?(params[:direction]) ?  params[:direction] : "asc"
   end
 # Viewから受け取るparams[:sort]が実際に存在するカラム名であるかを三項演算子を使用して判定しています。params[:sort]が指定されていない場合はnameで並び替えます。すなわちデフォルトの状態ではdateカラムで並び替えられたテーブルが表示されます。
   def sort_column
-      User.column_names.include?(params[:sort]) ? params[:sort] : "date"
+      Treasurer.column_names.include?(params[:sort]) ? params[:sort] : "date"
   end
 end
