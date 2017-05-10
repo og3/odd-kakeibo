@@ -7,7 +7,7 @@
           = f.text_field :date, value: @date, class: "treasurer_input__inputs__date"
           = f.text_field :comment, placeholder: "品目(15文字まで)", class: "treasurer_input__inputs__comment"
           = f.text_field :category, placeholder: "カテゴリ(15文字まで)", class: "treasurer_input__inputs__category"
-          = f.text_field :price, placeholder: "値段(半角)", class: "treasurer_input__inputs__price"
+          = f.text_field :price, placeholder: "値段(半角)", class: "treasurer_input__inputs__price", style: "ime-mode:disabled;"
           .treasurer_input__inputs__submit
             = f.submit "登録"
     .treasurer_list
